@@ -1,11 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chaturbate</title>
-    <link rel="stylesheet" href="./index.css">
-  </head>
-  <body class="w-screen h-screen bg-purple">
-  </body>
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body class="w-screen h-screen flex flex-col text-sm bg-back">
+    <div>
+        <!-- Navigation -->
+        <nav class="h-20 w-full background px-5 flex justify-between items-center">
+            <div class="flex items-center">
+                <button>
+                    <iconify-icon icon="jam:menu" class="text-white text-5xl"></iconify-icon>
+                </button>
+                <img src="./images/logo.svg" alt="Chaturbate Logo" class="h-10 inline-block ml-5" />
+            </div>
+
+            <div class="bg-dark-magenta px-5 py-2 w-[30%] rounded-full flex items-center gap-x-3">
+                <iconify-icon icon="ep:search" class="text-white/65 text-3xl"></iconify-icon>
+                <input type="text" placeholder="Search chaturbate"
+                    class="placeholder:text-white/35 w-full text-white outline-none border-none" />
+            </div>
+
+            <div class="flex items-center gap-x-3">
+                <button class="text-white border border-sky-blue/15 px-3 py-2 rounded-full">
+                    BROADCAST YOURSELF
+                </button>
+                <button class="text-white bg-orange px-3 py-2 rounded-full">
+                    SIGN UP
+                </button>
+                <button class="text-white border border-sky-blue/15 px-3 py-2 rounded-full">
+                    <iconify-icon icon="fluent:person-28-filled" class="text-white/70 text-sm"></iconify-icon>
+                    <iconify-icon icon="mingcute:down-line" class="text-white text-sm"></iconify-icon>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Tabs -->
+        <header class="h-12 bg-white px-5 flex items-end gap-x-5">
+            <button class="text-black font-semibold border-b-2 border-orange hover:cursor-pointer pb-1.5">
+                Featured
+            </button>
+            <button
+                class="text-black hover:font-semibold hover:border-b-2 hover:border-orange hover:cursor-pointer pb-2">
+                Women
+            </button>
+            <button
+                class="text-black hover:font-semibold hover:border-b-2 hover:border-orange hover:cursor-pointer pb-2">
+                Men
+            </button>
+
+            <button
+                class="text-black hover:font-semibold hover:border-b-2 hover:border-orange hover:cursor-pointer pb-2">
+                Couples
+            </button>
+
+            <button
+                class="text-black hover:font-semibold hover:border-b-2 hover:border-orange hover:cursor-pointer pb-2">
+                Trans
+            </button>
+
+        </header>
+    </div>
+
+    <div class="p-5 flex-1 w-full flex gap-x-3">
+        <aside class="bg-white h-full w-52 rounded-xl py-3 px-2">
+            <!-- Menus Section -->
+            <section class="flex flex-col gap-y-0.5">
+                <button
+                    class="bg-orange-light/15 w-full flex justify-baseline gap-x-3 p-2 text-orange rounded-lg"><iconify-icon
+                        icon="fa7-solid:home" class=" text-lg"></iconify-icon>Home</button>
+                <button class="w-full flex justify-baseline gap-x-3 p-2 text-black rounded-lg"><iconify-icon
+                        icon="weui:discover-filled" class=" text-lg"></iconify-icon>Discover</button>
+
+                <button class="w-full flex justify-baseline gap-x-3 p-2 text-black rounded-lg"><iconify-icon
+                        icon="mynaui:hash-hexagon-solid" class=" text-lg"></iconify-icon>Hashtags</button>
+
+                <button class=" w-full flex justify-baseline gap-x-3 p-2 text-black rounded-lg"><iconify-icon
+                        icon="basil:video-solid" class=" text-lg"></iconify-icon>Private Show</button>
+
+                <button class=" w-full flex justify-baseline gap-x-3 p-2 text-black rounded-lg"><iconify-icon
+                        icon="fluent:people-team-20-filled" class=" text-lg"></iconify-icon>Followers</button>
+            </section>
+        </aside>
+
+        <main class="flex-1 bg-green-600">
+            <!-- Main Content Section -->
+        </main>
+    </div>
+</body>
+
 </html>
