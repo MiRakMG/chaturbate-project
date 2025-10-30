@@ -13,30 +13,32 @@
 <body class="flex flex-col text-sm bg-back">
     <div class="fixed w-full z-50">
         <!-- Navigation -->
-        <nav class="h-20 w-full background px-5 flex justify-between items-center">
+        <nav class="h-20 w-full background px-5 flex justify-between items-center relative">
             <div class="flex items-center">
                 <button>
                     <iconify-icon icon="jam:menu" class="text-white text-5xl"></iconify-icon>
                 </button>
-                <img src="./images/logo.svg" alt="Chaturbate Logo" class="h-10 inline-block ml-5" />
+                <img src="./images/logo.svg" alt="Chaturbate Logo"
+                    class="h-10 left-1/2 md:left-0 -translate-x-1/2 md:translate-x-0 md:ml-5 absolute md:relative inline-block " />
             </div>
 
-            <div class="bg-dark-magenta px-5 py-2 w-[30%] rounded-full flex items-center gap-x-3">
+            <div class="bg-dark-magenta px-5 py-2 w-[30%] rounded-full hidden lg:flex items-center gap-x-3">
                 <iconify-icon icon="ep:search" class="text-white/65 text-3xl"></iconify-icon>
                 <input type="text" placeholder="Search chaturbate"
                     class="placeholder:text-white/35 w-full text-white outline-none border-none" />
             </div>
 
             <div class="flex items-center gap-x-3">
-                <button class="text-white border border-sky-blue/15 px-3 py-2 rounded-full">
+                <button class="hidden lg:block text-white border border-sky-blue/15 px-3 py-2 rounded-full">
                     BROADCAST YOURSELF
                 </button>
-                <button class="text-white bg-orange px-3 py-2 rounded-full">
+                <button class="hidden md:block text-white bg-orange px-3 py-2 rounded-full">
                     SIGN UP
                 </button>
-                <button class="text-white border border-sky-blue/15 px-3 py-2 rounded-full">
-                    <iconify-icon icon="fluent:person-28-filled" class="text-white/70 text-sm"></iconify-icon>
-                    <iconify-icon icon="mingcute:down-line" class="text-white text-sm"></iconify-icon>
+                <button class="text-white border border-sky-blue/15 flex px-2 md:px-3 py-2 rounded-full">
+                    <iconify-icon icon="fluent:person-28-filled"
+                        class="text-white/70 text-5xl md:text-sm"></iconify-icon>
+                    <iconify-icon icon="mingcute:down-line" class="hidden md:block text-white text-sm"></iconify-icon>
                 </button>
             </div>
         </nav>
@@ -201,22 +203,22 @@
 
 
         <main class="flex-1 flex gap-3 ml-56">
-            <section class="flex-1 flex flex-col gap-3 relative">
+            <section class="flex-1 flex flex-col gap-3 relative ">
                 <!-- Ads Section -->
                 <div
-                    class="w-728 h-90 bg-black/5 border border-dashed rounded-lg text-black flex items-center justify-center ml-[50%] -translate-x-1/2 ">
+                    class="w-728 h-90 bg-black/5 border border-dashed rounded-lg text-black/65 flex items-center justify-center ml-[50%] -translate-x-1/2 ">
                     728x90</div>
 
                 <!-- Content section -->
                 <div class="w-full h-full ">
-                    <h2>Recently added videos 🔥</h2>
+                    <h2 class="text-xl font-medium mb-3">Recently added videos 🔥</h2>
 
-                    <div class="flex justify-between w-full flex-wrap gap-y-4">
-                        <article class="bg-white h-270 min-w-270 max-w-360 rounded-b-lg">
+                    <div class="grid w-full gap-3 grid-cols-[repeat(auto-fill,minmax(260px,1fr))] justify-start">
+                        <article class="bg-white w-270 h-288 rounded-b-lg">
                             <div
                                 class="w-full h-3/5 relative bg-[url('./images/image-1.jpg')] bg-cover bg-center bg-no-repeat rounded-t-lg">
                                 <div class="absolute inset-0 bg-gray/20"></div>
-                                <div class="absolute flex left-3 bottom-3 z-50 gap-x-3">
+                                <div class="absolute flex left-3 bottom-3 z-20 gap-x-3">
                                     <div class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm">
                                         22 mins
                                     </div>
@@ -228,21 +230,22 @@
                                 </div>
                             </div>
 
-                            <div class="px-3">
-                                <h3 class="font-semibold text-black mt-2 ">tropwet</h3>
-                                <p>he fucks the two girls and they cum in her mouth she eats the</p>
-                                <div class="flex items-center">
+                            <div class="px-3 ">
+                                <h3 class="font-medium text-black mt-2 ">tropwet</h3>
+                                <p class="text-xs">he fucks the two girls and they cum in her mouth she eats the</p>
+                                <div class="flex items-center mt-3 gap-x-2">
                                     <iconify-icon icon="ri:women-line" class="text-lg text-orange"></iconify-icon>
-                                    <span>21 ans</span>
+                                    <span class="text-xs">21 ans</span>
                                     <iconify-icon icon="twemoji:flag-colombia" class="text-lg"></iconify-icon>
                                 </div>
                             </div>
                         </article>
-                        <article class="bg-white h-270 min-w-270 max-w-360  rounded-b-lg">
+
+                        <article class="bg-white w-270 h-288 rounded-b-lg">
                             <div
                                 class="w-full h-3/5 relative bg-[url('./images/image-1.jpg')] bg-cover bg-center bg-no-repeat rounded-t-lg">
                                 <div class="absolute inset-0 bg-gray/20"></div>
-                                <div class="absolute flex left-3 bottom-3 z-50 gap-x-3">
+                                <div class="absolute flex left-3 bottom-3 z-20 gap-x-3">
                                     <div class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm">
                                         22 mins
                                     </div>
@@ -254,21 +257,22 @@
                                 </div>
                             </div>
 
-                            <div class="px-3">
-                                <h3 class="font-semibold text-black mt-2 ">tropwet</h3>
-                                <p>he fucks the two girls and they cum in her mouth she eats the</p>
-                                <div class="flex items-center">
+                            <div class="px-3 ">
+                                <h3 class="font-medium text-black mt-2 ">tropwet</h3>
+                                <p class="text-xs">he fucks the two girls and they cum in her mouth she eats the</p>
+                                <div class="flex items-center mt-3 gap-x-2">
                                     <iconify-icon icon="ri:women-line" class="text-lg text-orange"></iconify-icon>
-                                    <span>21 ans</span>
+                                    <span class="text-xs">21 ans</span>
                                     <iconify-icon icon="twemoji:flag-colombia" class="text-lg"></iconify-icon>
                                 </div>
                             </div>
                         </article>
-                        <article class="bg-white h-270 min-w-270 max-w-360  rounded-b-lg">
+
+                        <article class="bg-white w-270 h-288 rounded-b-lg">
                             <div
                                 class="w-full h-3/5 relative bg-[url('./images/image-1.jpg')] bg-cover bg-center bg-no-repeat rounded-t-lg">
                                 <div class="absolute inset-0 bg-gray/20"></div>
-                                <div class="absolute flex left-3 bottom-3 z-50 gap-x-3">
+                                <div class="absolute flex left-3 bottom-3 z-20 gap-x-3">
                                     <div class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm">
                                         22 mins
                                     </div>
@@ -280,21 +284,22 @@
                                 </div>
                             </div>
 
-                            <div class="px-3">
-                                <h3 class="font-semibold text-black mt-2 ">tropwet</h3>
-                                <p>he fucks the two girls and they cum in her mouth she eats the</p>
-                                <div class="flex items-center">
+                            <div class="px-3 ">
+                                <h3 class="font-medium text-black mt-2 ">tropwet</h3>
+                                <p class="text-xs">he fucks the two girls and they cum in her mouth she eats the</p>
+                                <div class="flex items-center mt-3 gap-x-2">
                                     <iconify-icon icon="ri:women-line" class="text-lg text-orange"></iconify-icon>
-                                    <span>21 ans</span>
+                                    <span class="text-xs">21 ans</span>
                                     <iconify-icon icon="twemoji:flag-colombia" class="text-lg"></iconify-icon>
                                 </div>
                             </div>
                         </article>
-                        <article class="bg-white h-270 min-w-270 max-w-360  rounded-b-lg">
+
+                        <article class="bg-white w-270 h-288 rounded-b-lg">
                             <div
                                 class="w-full h-3/5 relative bg-[url('./images/image-1.jpg')] bg-cover bg-center bg-no-repeat rounded-t-lg">
                                 <div class="absolute inset-0 bg-gray/20"></div>
-                                <div class="absolute flex left-3 bottom-3 z-50 gap-x-3">
+                                <div class="absolute flex left-3 bottom-3 z-20 gap-x-3">
                                     <div class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm">
                                         22 mins
                                     </div>
@@ -306,21 +311,22 @@
                                 </div>
                             </div>
 
-                            <div class="px-3">
-                                <h3 class="font-semibold text-black mt-2 ">tropwet</h3>
-                                <p>he fucks the two girls and they cum in her mouth she eats the</p>
-                                <div class="flex items-center">
+                            <div class="px-3 ">
+                                <h3 class="font-medium text-black mt-2 ">tropwet</h3>
+                                <p class="text-xs">he fucks the two girls and they cum in her mouth she eats the</p>
+                                <div class="flex items-center mt-3 gap-x-2">
                                     <iconify-icon icon="ri:women-line" class="text-lg text-orange"></iconify-icon>
-                                    <span>21 ans</span>
+                                    <span class="text-xs">21 ans</span>
                                     <iconify-icon icon="twemoji:flag-colombia" class="text-lg"></iconify-icon>
                                 </div>
                             </div>
                         </article>
-                        <article class="bg-white h-270 min-w-270 max-w-360  rounded-b-lg">
+
+                        <article class="bg-white w-270 h-288 rounded-b-lg">
                             <div
                                 class="w-full h-3/5 relative bg-[url('./images/image-1.jpg')] bg-cover bg-center bg-no-repeat rounded-t-lg">
                                 <div class="absolute inset-0 bg-gray/20"></div>
-                                <div class="absolute flex left-3 bottom-3 z-50 gap-x-3">
+                                <div class="absolute flex left-3 bottom-3 z-20 gap-x-3">
                                     <div class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm">
                                         22 mins
                                     </div>
@@ -332,21 +338,22 @@
                                 </div>
                             </div>
 
-                            <div class="px-3">
-                                <h3 class="font-semibold text-black mt-2 ">tropwet</h3>
-                                <p>he fucks the two girls and they cum in her mouth she eats the</p>
-                                <div class="flex items-center">
+                            <div class="px-3 ">
+                                <h3 class="font-medium text-black mt-2 ">tropwet</h3>
+                                <p class="text-xs">he fucks the two girls and they cum in her mouth she eats the</p>
+                                <div class="flex items-center mt-3 gap-x-2">
                                     <iconify-icon icon="ri:women-line" class="text-lg text-orange"></iconify-icon>
-                                    <span>21 ans</span>
+                                    <span class="text-xs">21 ans</span>
                                     <iconify-icon icon="twemoji:flag-colombia" class="text-lg"></iconify-icon>
                                 </div>
                             </div>
                         </article>
-                        <article class="bg-white h-270 min-w-270 max-w-360  rounded-b-lg">
+
+                        <article class="bg-white w-270 h-288 rounded-b-lg">
                             <div
                                 class="w-full h-3/5 relative bg-[url('./images/image-1.jpg')] bg-cover bg-center bg-no-repeat rounded-t-lg">
                                 <div class="absolute inset-0 bg-gray/20"></div>
-                                <div class="absolute flex left-3 bottom-3 z-50 gap-x-3">
+                                <div class="absolute flex left-3 bottom-3 z-20 gap-x-3">
                                     <div class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm">
                                         22 mins
                                     </div>
@@ -358,21 +365,22 @@
                                 </div>
                             </div>
 
-                            <div class="px-3">
-                                <h3 class="font-semibold text-black mt-2 ">tropwet</h3>
-                                <p>he fucks the two girls and they cum in her mouth she eats the</p>
-                                <div class="flex items-center">
+                            <div class="px-3 ">
+                                <h3 class="font-medium text-black mt-2 ">tropwet</h3>
+                                <p class="text-xs">he fucks the two girls and they cum in her mouth she eats the</p>
+                                <div class="flex items-center mt-3 gap-x-2">
                                     <iconify-icon icon="ri:women-line" class="text-lg text-orange"></iconify-icon>
-                                    <span>21 ans</span>
+                                    <span class="text-xs">21 ans</span>
                                     <iconify-icon icon="twemoji:flag-colombia" class="text-lg"></iconify-icon>
                                 </div>
                             </div>
                         </article>
-                        <article class="bg-white h-270 min-w-270 max-w-360  rounded-b-lg">
+
+                        <article class="bg-white w-270 h-288 rounded-b-lg">
                             <div
                                 class="w-full h-3/5 relative bg-[url('./images/image-1.jpg')] bg-cover bg-center bg-no-repeat rounded-t-lg">
                                 <div class="absolute inset-0 bg-gray/20"></div>
-                                <div class="absolute flex left-3 bottom-3 z-50 gap-x-3">
+                                <div class="absolute flex left-3 bottom-3 z-20 gap-x-3">
                                     <div class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm">
                                         22 mins
                                     </div>
@@ -384,21 +392,22 @@
                                 </div>
                             </div>
 
-                            <div class="px-3">
-                                <h3 class="font-semibold text-black mt-2 ">tropwet</h3>
-                                <p>he fucks the two girls and they cum in her mouth she eats the</p>
-                                <div class="flex items-center">
+                            <div class="px-3 ">
+                                <h3 class="font-medium text-black mt-2 ">tropwet</h3>
+                                <p class="text-xs">he fucks the two girls and they cum in her mouth she eats the</p>
+                                <div class="flex items-center mt-3 gap-x-2">
                                     <iconify-icon icon="ri:women-line" class="text-lg text-orange"></iconify-icon>
-                                    <span>21 ans</span>
+                                    <span class="text-xs">21 ans</span>
                                     <iconify-icon icon="twemoji:flag-colombia" class="text-lg"></iconify-icon>
                                 </div>
                             </div>
                         </article>
-                        <article class="bg-white h-270 min-w-270 max-w-360  rounded-b-lg">
+
+                        <article class="bg-white w-270 h-288 rounded-b-lg">
                             <div
                                 class="w-full h-3/5 relative bg-[url('./images/image-1.jpg')] bg-cover bg-center bg-no-repeat rounded-t-lg">
                                 <div class="absolute inset-0 bg-gray/20"></div>
-                                <div class="absolute flex left-3 bottom-3 z-50 gap-x-3">
+                                <div class="absolute flex left-3 bottom-3 z-20 gap-x-3">
                                     <div class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm">
                                         22 mins
                                     </div>
@@ -410,21 +419,22 @@
                                 </div>
                             </div>
 
-                            <div class="px-3">
-                                <h3 class="font-semibold text-black mt-2 ">tropwet</h3>
-                                <p>he fucks the two girls and they cum in her mouth she eats the</p>
-                                <div class="flex items-center">
+                            <div class="px-3 ">
+                                <h3 class="font-medium text-black mt-2 ">tropwet</h3>
+                                <p class="text-xs">he fucks the two girls and they cum in her mouth she eats the</p>
+                                <div class="flex items-center mt-3 gap-x-2">
                                     <iconify-icon icon="ri:women-line" class="text-lg text-orange"></iconify-icon>
-                                    <span>21 ans</span>
+                                    <span class="text-xs">21 ans</span>
                                     <iconify-icon icon="twemoji:flag-colombia" class="text-lg"></iconify-icon>
                                 </div>
                             </div>
                         </article>
-                        <article class="bg-white h-270 min-w-270 max-w-360  rounded-b-lg">
+
+                        <article class="bg-white w-270 h-288 rounded-b-lg">
                             <div
                                 class="w-full h-3/5 relative bg-[url('./images/image-1.jpg')] bg-cover bg-center bg-no-repeat rounded-t-lg">
                                 <div class="absolute inset-0 bg-gray/20"></div>
-                                <div class="absolute flex left-3 bottom-3 z-50 gap-x-3">
+                                <div class="absolute flex left-3 bottom-3 z-20 gap-x-3">
                                     <div class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm">
                                         22 mins
                                     </div>
@@ -436,21 +446,22 @@
                                 </div>
                             </div>
 
-                            <div class="px-3">
-                                <h3 class="font-semibold text-black mt-2 ">tropwet</h3>
-                                <p>he fucks the two girls and they cum in her mouth she eats the</p>
-                                <div class="flex items-center">
+                            <div class="px-3 ">
+                                <h3 class="font-medium text-black mt-2 ">tropwet</h3>
+                                <p class="text-xs">he fucks the two girls and they cum in her mouth she eats the</p>
+                                <div class="flex items-center mt-3 gap-x-2">
                                     <iconify-icon icon="ri:women-line" class="text-lg text-orange"></iconify-icon>
-                                    <span>21 ans</span>
+                                    <span class="text-xs">21 ans</span>
                                     <iconify-icon icon="twemoji:flag-colombia" class="text-lg"></iconify-icon>
                                 </div>
                             </div>
                         </article>
-                        <article class="bg-white h-270 min-w-270 max-w-360  rounded-b-lg">
+
+                        <article class="bg-white w-270 h-288 rounded-b-lg">
                             <div
                                 class="w-full h-3/5 relative bg-[url('./images/image-1.jpg')] bg-cover bg-center bg-no-repeat rounded-t-lg">
                                 <div class="absolute inset-0 bg-gray/20"></div>
-                                <div class="absolute flex left-3 bottom-3 z-50 gap-x-3">
+                                <div class="absolute flex left-3 bottom-3 z-20 gap-x-3">
                                     <div class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm">
                                         22 mins
                                     </div>
@@ -462,21 +473,22 @@
                                 </div>
                             </div>
 
-                            <div class="px-3">
-                                <h3 class="font-semibold text-black mt-2 ">tropwet</h3>
-                                <p>he fucks the two girls and they cum in her mouth she eats the</p>
-                                <div class="flex items-center">
+                            <div class="px-3 ">
+                                <h3 class="font-medium text-black mt-2 ">tropwet</h3>
+                                <p class="text-xs">he fucks the two girls and they cum in her mouth she eats the</p>
+                                <div class="flex items-center mt-3 gap-x-2">
                                     <iconify-icon icon="ri:women-line" class="text-lg text-orange"></iconify-icon>
-                                    <span>21 ans</span>
+                                    <span class="text-xs">21 ans</span>
                                     <iconify-icon icon="twemoji:flag-colombia" class="text-lg"></iconify-icon>
                                 </div>
                             </div>
                         </article>
-                        <article class="bg-white h-270 min-w-270 max-w-360  rounded-b-lg">
+
+                        <article class="bg-white w-270 h-288 rounded-b-lg">
                             <div
                                 class="w-full h-3/5 relative bg-[url('./images/image-1.jpg')] bg-cover bg-center bg-no-repeat rounded-t-lg">
                                 <div class="absolute inset-0 bg-gray/20"></div>
-                                <div class="absolute flex left-3 bottom-3 z-50 gap-x-3">
+                                <div class="absolute flex left-3 bottom-3 z-20 gap-x-3">
                                     <div class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm">
                                         22 mins
                                     </div>
@@ -488,21 +500,22 @@
                                 </div>
                             </div>
 
-                            <div class="px-3">
-                                <h3 class="font-semibold text-black mt-2 ">tropwet</h3>
-                                <p>he fucks the two girls and they cum in her mouth she eats the</p>
-                                <div class="flex items-center">
+                            <div class="px-3 ">
+                                <h3 class="font-medium text-black mt-2 ">tropwet</h3>
+                                <p class="text-xs">he fucks the two girls and they cum in her mouth she eats the</p>
+                                <div class="flex items-center mt-3 gap-x-2">
                                     <iconify-icon icon="ri:women-line" class="text-lg text-orange"></iconify-icon>
-                                    <span>21 ans</span>
+                                    <span class="text-xs">21 ans</span>
                                     <iconify-icon icon="twemoji:flag-colombia" class="text-lg"></iconify-icon>
                                 </div>
                             </div>
                         </article>
-                        <article class="bg-white h-270 min-w-270 max-w-360  rounded-b-lg">
+
+                        <article class="bg-white w-270 h-288 rounded-b-lg">
                             <div
                                 class="w-full h-3/5 relative bg-[url('./images/image-1.jpg')] bg-cover bg-center bg-no-repeat rounded-t-lg">
                                 <div class="absolute inset-0 bg-gray/20"></div>
-                                <div class="absolute flex left-3 bottom-3 z-50 gap-x-3">
+                                <div class="absolute flex left-3 bottom-3 z-20 gap-x-3">
                                     <div class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm">
                                         22 mins
                                     </div>
@@ -514,21 +527,22 @@
                                 </div>
                             </div>
 
-                            <div class="px-3">
-                                <h3 class="font-semibold text-black mt-2 ">tropwet</h3>
-                                <p>he fucks the two girls and they cum in her mouth she eats the</p>
-                                <div class="flex items-center">
+                            <div class="px-3 ">
+                                <h3 class="font-medium text-black mt-2 ">tropwet</h3>
+                                <p class="text-xs">he fucks the two girls and they cum in her mouth she eats the</p>
+                                <div class="flex items-center mt-3 gap-x-2">
                                     <iconify-icon icon="ri:women-line" class="text-lg text-orange"></iconify-icon>
-                                    <span>21 ans</span>
+                                    <span class="text-xs">21 ans</span>
                                     <iconify-icon icon="twemoji:flag-colombia" class="text-lg"></iconify-icon>
                                 </div>
                             </div>
                         </article>
-                        <article class="bg-white h-270 min-w-270 max-w-360  rounded-b-lg">
+
+                        <article class="bg-white w-270 h-288 rounded-b-lg">
                             <div
                                 class="w-full h-3/5 relative bg-[url('./images/image-1.jpg')] bg-cover bg-center bg-no-repeat rounded-t-lg">
                                 <div class="absolute inset-0 bg-gray/20"></div>
-                                <div class="absolute flex left-3 bottom-3 z-50 gap-x-3">
+                                <div class="absolute flex left-3 bottom-3 z-20 gap-x-3">
                                     <div class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm">
                                         22 mins
                                     </div>
@@ -540,21 +554,23 @@
                                 </div>
                             </div>
 
-                            <div class="px-3">
-                                <h3 class="font-semibold text-black mt-2 ">tropwet</h3>
-                                <p>he fucks the two girls and they cum in her mouth she eats the</p>
-                                <div class="flex items-center">
+                            <div class="px-3 ">
+                                <h3 class="font-medium text-black mt-2 ">tropwet</h3>
+                                <p class="text-xs">he fucks the two girls and they cum in her mouth she eats the</p>
+                                <div class="flex items-center mt-3 gap-x-2">
                                     <iconify-icon icon="ri:women-line" class="text-lg text-orange"></iconify-icon>
-                                    <span>21 ans</span>
+                                    <span class="text-xs">21 ans</span>
                                     <iconify-icon icon="twemoji:flag-colombia" class="text-lg"></iconify-icon>
                                 </div>
                             </div>
                         </article>
-                        <article class="bg-white h-270 min-w-270 max-w-360  rounded-b-lg">
+
+
+                        <article class="bg-white w-270 h-288 rounded-b-lg">
                             <div
                                 class="w-full h-3/5 relative bg-[url('./images/image-1.jpg')] bg-cover bg-center bg-no-repeat rounded-t-lg">
                                 <div class="absolute inset-0 bg-gray/20"></div>
-                                <div class="absolute flex left-3 bottom-3 z-50 gap-x-3">
+                                <div class="absolute flex left-3 bottom-3 z-20 gap-x-3">
                                     <div class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm">
                                         22 mins
                                     </div>
@@ -566,21 +582,22 @@
                                 </div>
                             </div>
 
-                            <div class="px-3">
-                                <h3 class="font-semibold text-black mt-2 ">tropwet</h3>
-                                <p>he fucks the two girls and they cum in her mouth she eats the</p>
-                                <div class="flex items-center">
+                            <div class="px-3 ">
+                                <h3 class="font-medium text-black mt-2 ">tropwet</h3>
+                                <p class="text-xs">he fucks the two girls and they cum in her mouth she eats the</p>
+                                <div class="flex items-center mt-3 gap-x-2">
                                     <iconify-icon icon="ri:women-line" class="text-lg text-orange"></iconify-icon>
-                                    <span>21 ans</span>
+                                    <span class="text-xs">21 ans</span>
                                     <iconify-icon icon="twemoji:flag-colombia" class="text-lg"></iconify-icon>
                                 </div>
                             </div>
                         </article>
-                        <article class="bg-white h-270 min-w-270 max-w-360  rounded-b-lg">
+
+                        <article class="bg-white w-270 h-288 rounded-b-lg">
                             <div
                                 class="w-full h-3/5 relative bg-[url('./images/image-1.jpg')] bg-cover bg-center bg-no-repeat rounded-t-lg">
                                 <div class="absolute inset-0 bg-gray/20"></div>
-                                <div class="absolute flex left-3 bottom-3 z-50 gap-x-3">
+                                <div class="absolute flex left-3 bottom-3 z-20 gap-x-3">
                                     <div class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm">
                                         22 mins
                                     </div>
@@ -592,21 +609,22 @@
                                 </div>
                             </div>
 
-                            <div class="px-3">
-                                <h3 class="font-semibold text-black mt-2 ">tropwet</h3>
-                                <p>he fucks the two girls and they cum in her mouth she eats the</p>
-                                <div class="flex items-center">
+                            <div class="px-3 ">
+                                <h3 class="font-medium text-black mt-2 ">tropwet</h3>
+                                <p class="text-xs">he fucks the two girls and they cum in her mouth she eats the</p>
+                                <div class="flex items-center mt-3 gap-x-2">
                                     <iconify-icon icon="ri:women-line" class="text-lg text-orange"></iconify-icon>
-                                    <span>21 ans</span>
+                                    <span class="text-xs">21 ans</span>
                                     <iconify-icon icon="twemoji:flag-colombia" class="text-lg"></iconify-icon>
                                 </div>
                             </div>
                         </article>
-                        <article class="bg-white h-270 min-w-270 max-w-360  rounded-b-lg">
+
+                        <article class="bg-white w-270 h-288 rounded-b-lg">
                             <div
                                 class="w-full h-3/5 relative bg-[url('./images/image-1.jpg')] bg-cover bg-center bg-no-repeat rounded-t-lg">
                                 <div class="absolute inset-0 bg-gray/20"></div>
-                                <div class="absolute flex left-3 bottom-3 z-50 gap-x-3">
+                                <div class="absolute flex left-3 bottom-3 z-20 gap-x-3">
                                     <div class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm">
                                         22 mins
                                     </div>
@@ -618,23 +636,271 @@
                                 </div>
                             </div>
 
-                            <div class="px-3">
-                                <h3 class="font-semibold text-black mt-2 ">tropwet</h3>
-                                <p>he fucks the two girls and they cum in her mouth she eats the</p>
-                                <div class="flex items-center">
+                            <div class="px-3 ">
+                                <h3 class="font-medium text-black mt-2 ">tropwet</h3>
+                                <p class="text-xs">he fucks the two girls and they cum in her mouth she eats the</p>
+                                <div class="flex items-center mt-3 gap-x-2">
                                     <iconify-icon icon="ri:women-line" class="text-lg text-orange"></iconify-icon>
-                                    <span>21 ans</span>
+                                    <span class="text-xs">21 ans</span>
                                     <iconify-icon icon="twemoji:flag-colombia" class="text-lg"></iconify-icon>
                                 </div>
                             </div>
                         </article>
+
+                        <article class="bg-white w-270 h-288 rounded-b-lg">
+                            <div
+                                class="w-full h-3/5 relative bg-[url('./images/image-1.jpg')] bg-cover bg-center bg-no-repeat rounded-t-lg">
+                                <div class="absolute inset-0 bg-gray/20"></div>
+                                <div class="absolute flex left-3 bottom-3 z-20 gap-x-3">
+                                    <div class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm">
+                                        22 mins
+                                    </div>
+                                    <div
+                                        class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm flex items-center gap-x-1">
+                                        <iconify-icon icon="mdi:eye" class=" text-lg"></iconify-icon>
+                                        <span>52</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="px-3 ">
+                                <h3 class="font-medium text-black mt-2 ">tropwet</h3>
+                                <p class="text-xs">he fucks the two girls and they cum in her mouth she eats the</p>
+                                <div class="flex items-center mt-3 gap-x-2">
+                                    <iconify-icon icon="ri:women-line" class="text-lg text-orange"></iconify-icon>
+                                    <span class="text-xs">21 ans</span>
+                                    <iconify-icon icon="twemoji:flag-colombia" class="text-lg"></iconify-icon>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="bg-white w-270 h-288 rounded-b-lg">
+                            <div
+                                class="w-full h-3/5 relative bg-[url('./images/image-1.jpg')] bg-cover bg-center bg-no-repeat rounded-t-lg">
+                                <div class="absolute inset-0 bg-gray/20"></div>
+                                <div class="absolute flex left-3 bottom-3 z-20 gap-x-3">
+                                    <div class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm">
+                                        22 mins
+                                    </div>
+                                    <div
+                                        class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm flex items-center gap-x-1">
+                                        <iconify-icon icon="mdi:eye" class=" text-lg"></iconify-icon>
+                                        <span>52</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="px-3 ">
+                                <h3 class="font-medium text-black mt-2 ">tropwet</h3>
+                                <p class="text-xs">he fucks the two girls and they cum in her mouth she eats the</p>
+                                <div class="flex items-center mt-3 gap-x-2">
+                                    <iconify-icon icon="ri:women-line" class="text-lg text-orange"></iconify-icon>
+                                    <span class="text-xs">21 ans</span>
+                                    <iconify-icon icon="twemoji:flag-colombia" class="text-lg"></iconify-icon>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="bg-white w-270 h-288 rounded-b-lg">
+                            <div
+                                class="w-full h-3/5 relative bg-[url('./images/image-1.jpg')] bg-cover bg-center bg-no-repeat rounded-t-lg">
+                                <div class="absolute inset-0 bg-gray/20"></div>
+                                <div class="absolute flex left-3 bottom-3 z-20 gap-x-3">
+                                    <div class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm">
+                                        22 mins
+                                    </div>
+                                    <div
+                                        class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm flex items-center gap-x-1">
+                                        <iconify-icon icon="mdi:eye" class=" text-lg"></iconify-icon>
+                                        <span>52</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="px-3 ">
+                                <h3 class="font-medium text-black mt-2 ">tropwet</h3>
+                                <p class="text-xs">he fucks the two girls and they cum in her mouth she eats the</p>
+                                <div class="flex items-center mt-3 gap-x-2">
+                                    <iconify-icon icon="ri:women-line" class="text-lg text-orange"></iconify-icon>
+                                    <span class="text-xs">21 ans</span>
+                                    <iconify-icon icon="twemoji:flag-colombia" class="text-lg"></iconify-icon>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="bg-white w-270 h-288 rounded-b-lg">
+                            <div
+                                class="w-full h-3/5 relative bg-[url('./images/image-1.jpg')] bg-cover bg-center bg-no-repeat rounded-t-lg">
+                                <div class="absolute inset-0 bg-gray/20"></div>
+                                <div class="absolute flex left-3 bottom-3 z-20 gap-x-3">
+                                    <div class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm">
+                                        22 mins
+                                    </div>
+                                    <div
+                                        class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm flex items-center gap-x-1">
+                                        <iconify-icon icon="mdi:eye" class=" text-lg"></iconify-icon>
+                                        <span>52</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="px-3 ">
+                                <h3 class="font-medium text-black mt-2 ">tropwet</h3>
+                                <p class="text-xs">he fucks the two girls and they cum in her mouth she eats the</p>
+                                <div class="flex items-center mt-3 gap-x-2">
+                                    <iconify-icon icon="ri:women-line" class="text-lg text-orange"></iconify-icon>
+                                    <span class="text-xs">21 ans</span>
+                                    <iconify-icon icon="twemoji:flag-colombia" class="text-lg"></iconify-icon>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="bg-white w-270 h-288 rounded-b-lg">
+                            <div
+                                class="w-full h-3/5 relative bg-[url('./images/image-1.jpg')] bg-cover bg-center bg-no-repeat rounded-t-lg">
+                                <div class="absolute inset-0 bg-gray/20"></div>
+                                <div class="absolute flex left-3 bottom-3 z-20 gap-x-3">
+                                    <div class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm">
+                                        22 mins
+                                    </div>
+                                    <div
+                                        class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm flex items-center gap-x-1">
+                                        <iconify-icon icon="mdi:eye" class=" text-lg"></iconify-icon>
+                                        <span>52</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="px-3 ">
+                                <h3 class="font-medium text-black mt-2 ">tropwet</h3>
+                                <p class="text-xs">he fucks the two girls and they cum in her mouth she eats the</p>
+                                <div class="flex items-center mt-3 gap-x-2">
+                                    <iconify-icon icon="ri:women-line" class="text-lg text-orange"></iconify-icon>
+                                    <span class="text-xs">21 ans</span>
+                                    <iconify-icon icon="twemoji:flag-colombia" class="text-lg"></iconify-icon>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="bg-white w-270 h-288 rounded-b-lg">
+                            <div
+                                class="w-full h-3/5 relative bg-[url('./images/image-1.jpg')] bg-cover bg-center bg-no-repeat rounded-t-lg">
+                                <div class="absolute inset-0 bg-gray/20"></div>
+                                <div class="absolute flex left-3 bottom-3 z-20 gap-x-3">
+                                    <div class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm">
+                                        22 mins
+                                    </div>
+                                    <div
+                                        class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm flex items-center gap-x-1">
+                                        <iconify-icon icon="mdi:eye" class=" text-lg"></iconify-icon>
+                                        <span>52</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="px-3 ">
+                                <h3 class="font-medium text-black mt-2 ">tropwet</h3>
+                                <p class="text-xs">he fucks the two girls and they cum in her mouth she eats the</p>
+                                <div class="flex items-center mt-3 gap-x-2">
+                                    <iconify-icon icon="ri:women-line" class="text-lg text-orange"></iconify-icon>
+                                    <span class="text-xs">21 ans</span>
+                                    <iconify-icon icon="twemoji:flag-colombia" class="text-lg"></iconify-icon>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="bg-white w-270 h-288 rounded-b-lg">
+                            <div
+                                class="w-full h-3/5 relative bg-[url('./images/image-1.jpg')] bg-cover bg-center bg-no-repeat rounded-t-lg">
+                                <div class="absolute inset-0 bg-gray/20"></div>
+                                <div class="absolute flex left-3 bottom-3 z-20 gap-x-3">
+                                    <div class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm">
+                                        22 mins
+                                    </div>
+                                    <div
+                                        class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm flex items-center gap-x-1">
+                                        <iconify-icon icon="mdi:eye" class=" text-lg"></iconify-icon>
+                                        <span>52</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="px-3 ">
+                                <h3 class="font-medium text-black mt-2 ">tropwet</h3>
+                                <p class="text-xs">he fucks the two girls and they cum in her mouth she eats the</p>
+                                <div class="flex items-center mt-3 gap-x-2">
+                                    <iconify-icon icon="ri:women-line" class="text-lg text-orange"></iconify-icon>
+                                    <span class="text-xs">21 ans</span>
+                                    <iconify-icon icon="twemoji:flag-colombia" class="text-lg"></iconify-icon>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="bg-white w-270 h-288 rounded-b-lg">
+                            <div
+                                class="w-full h-3/5 relative bg-[url('./images/image-1.jpg')] bg-cover bg-center bg-no-repeat rounded-t-lg">
+                                <div class="absolute inset-0 bg-gray/20"></div>
+                                <div class="absolute flex left-3 bottom-3 z-20 gap-x-3">
+                                    <div class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm">
+                                        22 mins
+                                    </div>
+                                    <div
+                                        class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm flex items-center gap-x-1">
+                                        <iconify-icon icon="mdi:eye" class=" text-lg"></iconify-icon>
+                                        <span>52</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="px-3 ">
+                                <h3 class="font-medium text-black mt-2 ">tropwet</h3>
+                                <p class="text-xs">he fucks the two girls and they cum in her mouth she eats the</p>
+                                <div class="flex items-center mt-3 gap-x-2">
+                                    <iconify-icon icon="ri:women-line" class="text-lg text-orange"></iconify-icon>
+                                    <span class="text-xs">21 ans</span>
+                                    <iconify-icon icon="twemoji:flag-colombia" class="text-lg"></iconify-icon>
+                                </div>
+                            </div>
+                        </article>
+
+
                     </div>
+
+                    <!-- Pagination -->
+                    <div class="flex items-center justify-center space-x-2 mt-5">
+                        <!-- Previous Button -->
+                        <button class="px-3 py-1 rounded-sm text-black bg-white cursor-not-allowed" disabled>
+                            Prev
+                        </button>
+
+                        <!-- Page Numbers -->
+                        <button class="px-3 py-1 rounded-sm bg-purple text-white">1</button>
+                        <button class="px-3 py-1 rounded-sm text-black bg-white">2</button>
+                        <button class="px-3 py-1 rounded-sm text-black bg-white">3</button>
+
+                        <!-- Ellipsis -->
+                        <span class="px-3 py-1 rounded-sm text-black bg-white">...</span>
+
+                        <!-- Last Page -->
+                        <button class="px-3 py-1 rounded-sm text-black bg-white">10</button>
+
+                        <!-- Next Button -->
+                        <button class="px-3 py-1 rounded-sm text-black bg-white">
+                            Next
+                        </button>
+                    </div>
+
                 </div>
+
+                <!-- Ads Section -->
+                <div
+                    class="w-728 h-90 bg-black/5 border border-dashed rounded-lg text-black/65 flex items-center justify-center ml-[50%] -translate-x-1/2 ">
+                    728x90</div>
             </section>
 
             <!-- Ads Section -->
             <div
-                class="w-120 h-600 bg-black/5 border border-dashed rounded-lg text-black flex items-center justify-center translate-y-1/2">
+                class="w-120 h-600 bg-black/5 border border-dashed rounded-lg text-black/65 flex items-center justify-center translate-y-1/2">
                 120x600</div>
 
         </main>

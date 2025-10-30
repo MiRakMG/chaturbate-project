@@ -11,14 +11,16 @@
   --color-black-2: #141414;
   --color-gray: #d9d9d9;
   --color-gray-3: #f8f8f8;
-  --color-midnight-blue: #0C1844;
-  --color-dark-blue : #030920;
+  --color-midnight-blue: #0c1844;
+  --color-dark-blue: #030920;
+  --color-purple: #8661c1;
 
   /* Spacing */
   --spacing-90: 90px;
   --spacing-120: 120px;
   --spacing-200: 200px;
   --spacing-270: 270px;
+  --spacing-288: 288px;
   --spacing-360: 360px;
   --spacing-600: 600px;
   --spacing-728: 728px;
