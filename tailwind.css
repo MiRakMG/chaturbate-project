@@ -24,4 +24,8 @@
   --spacing-360: 360px;
   --spacing-600: 600px;
   --spacing-728: 728px;
+
+  /* Breakpoints */
+  --breakpoint-xs: 450px;
+  
 }
