@@ -17,7 +17,7 @@
         <!-- Navigation -->
         <nav class="h-20 w-full background px-5 flex justify-between items-center relative">
             <div class="flex items-center">
-                <button>
+                <button id="menuBtn" type="button" aria-controls="sidebar" aria-expanded="false" class="cursor-pointer">
                     <iconify-icon icon="jam:menu" class="text-white text-5xl"></iconify-icon>
                 </button>
                 <img src="./images/logo.svg" alt="Cam 4 Teens Logo"
@@ -73,7 +73,7 @@
     </div>
 
     <div class="p-5 flex-1 w-full flex gap-x-3 pt-36">
-        <aside class="bg-white w-52 rounded-xl py-3 px-2 fixed hidden lg:flex flex-col gap-y-8">
+        <aside id="sidebar" class="bg-white w-72 -ml-5 lg:ml-0 -mt-16 lg:mt-0 lg:w-52 rounded-xl py-3 px-5 lg:px-2 fixed hidden z-50 flex-col gap-y-8"> 
             <!-- Menus Section -->
             <section class="flex flex-col gap-y-0.5">
                 <button
@@ -204,7 +204,7 @@
 
 
 
-        <main class="flex-1 flex gap-3 lg:ml-56">
+        <main id="main" class="flex-1 flex gap-3">
             <section class="flex-1 flex flex-col gap-3 relative ">
                 <!-- Ads Section -->
                 <div
@@ -956,6 +956,7 @@
 
         </main>
     </div>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
